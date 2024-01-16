@@ -1,9 +1,4 @@
-aaa
+# Roundcube for Developers
 
-
-
-
-sed -i "$(sed -n '/./{x;p;x};${=;}' docker-entrypoint.sh | sed -n '$p')i ciao come stai" docker-entrypoint.sh
-
-
-sed "$(sed -n '/./{x;p;x};${=;}' docker-entrypoint.sh)s/$/ciao come stai/" docker-entrypoint.sh
+This is a Docker version of roundcube for developers. 
+It is based on the official roundcube docker image, but adds some tools to make it easier to develop roundcube plugins.
